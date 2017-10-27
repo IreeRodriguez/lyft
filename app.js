@@ -5,22 +5,22 @@ function scrollFunction() {
         document.getElementById("navbar").style.background = "white";
         document.getElementById("hidden").style.visibility = "visible";
         document.getElementById("logo").src = "assets/images/logo-pink.png";
-        document.getElementById("drive").style.color= "gray";
 
-        //     var x = document.getElementById("navbar1");
-        //     var y = x.getElementsByTagName("a");
-        //     for (var i = 0; i < y.length; i++) {
-        //     y[i].style.color = "red";
-        // }
+
+            var x = document.getElementById("navbar1");
+            var y = x.getElementsByTagName("a");
+            for (var i = 0; i < y.length; i++) {
+            y[i].style.color = "gray";
+        }
 
     } else {
         document.getElementById("navbar").style.background = "transparent";
         document.getElementById("hidden").style.visibility = "hidden";
         document.getElementById("logo").src = "assets/images/logo-white.png";
-        //     var x = document.getElementById("navbar1");
-        //     var y = x.getElementsByTagName("a");
-        //     for (var i = 0; i < y.length; i++) {
-        //     y[i].style.color = "#f2f2f2";
-        // }
+            var x = document.getElementById("navbar1");
+            var y = x.getElementsByTagName("a");
+            for (var i = 0; i < y.length; i++) {
+            y[i].style.color = "#f2f2f2";
+        }
     }
 }

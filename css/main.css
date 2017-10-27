@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
-.navprop{
+#navbar{
     position: fixed;
     width: 100%;
     padding: 2.1em 0 1.9em;
@@ -10,13 +10,12 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-
-}
-.nav1{
     top: 0;
     margin: 0;
-    transition: top 0.3s;
+    transition: 0.5s;
+
 }
+
 .navbar{
     display: inline-block;
     margin-right: 2em;
@@ -36,8 +35,8 @@ body {
   flex: 3 100%;
   margin-left: 1em;
 }
-#navbar1 a:hover {
-  color: #FF00BF;
+.navbar a:hover {
+  color: #FF00BF !important;
 }
 #hidden{
     visibility: hidden;
