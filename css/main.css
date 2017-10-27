@@ -1,3 +1,65 @@
-/*
- * Estilos de tu proyecto
- */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navprop{
+    position: fixed;
+    width: 100%;
+    padding: 2.1em 0 1.9em;
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+.nav1{
+    top: 0;
+    margin: 0;
+    transition: top 0.3s;
+}
+.navbar{
+    display: inline-block;
+    margin-right: 2em;
+}
+.frame{
+    border-radius: 0.3em;
+    border: 0.05em solid lightgray;
+
+}
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.6em 0.9em 0.6em;
+  text-decoration: none;
+  font-size: 18px;
+  flex: 3 100%;
+  margin-left: 1em;
+}
+#navbar1 a:hover {
+  color: #FF00BF;
+}
+#hidden{
+    visibility: hidden;
+    border-radius: 0.3em;
+    border: 0.05em solid #FF00BF;
+}
+#logo{
+    height: 3em;
+    margin-left: 5em;
+    align-self: center;
+}
+#lyft{
+    background-image: url("../assets/images/hero.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    top: 0;
+    padding-top: 10%;
+}
+#lyft div{
+    display: inline-block;
+    background-color: white;
+    padding: 6em;
+}
