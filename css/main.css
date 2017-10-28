@@ -1,8 +1,10 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
-#navbar{
+#navbar{/*id de todo el nav block*/
     position: fixed;
     width: 100%;
     padding: 2.1em 0 1.9em;
@@ -13,17 +15,14 @@ body {
     top: 0;
     margin: 0;
     transition: 0.5s;
-
 }
-
-.navbar{
+.navbar{/*clase del div dentro del nav block*/
     display: inline-block;
     margin-right: 2em;
 }
-.frame{
+.frame{/*marco para login*/
     border-radius: 0.3em;
     border: 0.05em solid lightgray;
-
 }
 .navbar a {
   display: inline-block;
@@ -35,10 +34,10 @@ body {
   flex: 3 100%;
   margin-left: 1em;
 }
-.navbar a:hover {
+a:hover {
   color: #FF00BF !important;
 }
-#hidden{
+#hidden{ /*boton de sign up default hidden*/
     visibility: hidden;
     border-radius: 0.3em;
     border: 0.05em solid #FF00BF;
@@ -48,7 +47,7 @@ body {
     margin-left: 5em;
     align-self: center;
 }
-#lyft{
+#lyft{/*bloque con fondo imagen gif*/
     background-image: url("../assets/images/hero.gif");
     background-repeat: no-repeat;
     background-position: center;
@@ -56,9 +55,111 @@ body {
     width: 100%;
     top: 0;
     padding-top: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
 #lyft div{
     display: inline-block;
     background-color: white;
-    padding: 6em;
+    padding:4em;
+}
+.blueText{
+    color:#728099;
+}
+.blue{
+    color:#352384;
+}
+.white{
+    color: white;
+}
+.pink{
+    color: #FF00BF;
+}
+h1{
+    font-size: 250%;
+    margin: 0;
+}
+h2{
+    font-weight: 500;
+    font-size: 200%;
+    margin-top: 0;
+}
+h4{
+    font-weight: 400;
+    font-size: 90%;
+    margin-top: 0.5em;
+}
+input[type=text], select {
+    display: block;
+    width: 27em;
+    margin: 1em 0 2em ;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid gray;
+    font-size: 100%;
+}
+.formLinks:hover{
+    color:#CB4286;
+    text-decoration: underline;
+}
+.formLinks{
+    text-decoration: none;
+}
+p{
+    margin-top: 2em;
+    font-size: 70%;
+    line-height: 2em;
+    letter-spacing: normal;
+}
+.button{/*boton become a driver*/
+    color: white;
+    background-color: #FF00BF;
+    border-radius: 0.5em;
+    padding: 0.8em 1em 0.8em ;
+    margin-right: 1em;
+    text-decoration: none;
+}
+#features{
+    background: linear-gradient(#76278F, #2B1E66);
+    padding: 3% 10% 3%;
+}
+.container{
+    display: flex;
+}
+.features>*{
+    flex: 1 100%;
+    margin: 0 2em 0;
+}
+.phone{
+    width: 100%;
+}
+.watch{
+    padding: 0em;
+
+}
+.watch .text{
+    flex: 1 20%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.watch .video{
+    flex: 2 56%;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+iframe{
+    width: 100%;
+    display: block;
+
+}
+.text{
+    font-size: 92%;
+    padding: 2.5em;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+.text a{
+    text-decoration: none;
+    color: black;
 }
